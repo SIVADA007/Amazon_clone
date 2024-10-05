@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "adelphes.android-dev-ext",
+    "ms-vscode.cmake-tools",
+    "ms-vscode.remote-explorer"
+  ]
+}
