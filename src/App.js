@@ -3,10 +3,10 @@ import "./App.css";
 import "./Header.css";
 import Header from "./Header";
 import Home from "./Home";
-import { IntlProvider } from "react-intl"; // Import IntlProvider
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
+import Login from "./Login";  // Import the Login component
+import { IntlProvider } from "react-intl"; 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Checkout from "./Checkout";
-import  Login  from "./Login";
 
 // Sample messages for internationalization
 const messages = {
@@ -19,14 +19,13 @@ const messages = {
 
 function App() {
   return (
-    <IntlProvider locale="en" messages={messages["en"]}> {/* Wrap IntlProvider */}
+    <IntlProvider locale="en" messages={messages["en"]}>
       <Router>
         <div className="app">
           <Header />
           <Routes>
-            <Route path="/login">
-             <Login/>
-            </Route>
+            {/* Use the Login component */}
+            <Route path="/login" element={<Login />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/" element={<Home />} />
           </Routes>
