@@ -11,6 +11,15 @@ const [password, setPassword] =useState('');
 
 
 const signIn = e => {
+    e.preventDefault();
+    //some fansy firebase login
+}
+
+const regiser = e => {
+  e.preventDefault();
+  //do some fancy firebase register
+
+  
 
 }
 
@@ -48,7 +57,9 @@ const signIn = e => {
                 By signing-in you agrees amazons Fake clones terms and conditions 
                </p>
 
-               <button className="login__registerButton">Create amazon account</button>
+               <button 
+               onClick={regiser}
+               className="login__registerButton">Create amazon account</button>
          </div>
          
       {/* Add your login form here */}
