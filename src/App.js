@@ -6,6 +6,7 @@ import Home from "./Home";
 import { IntlProvider } from "react-intl"; // Import IntlProvider
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
 import Checkout from "./Checkout";
+import  Login  from "./Login";
 
 // Sample messages for internationalization
 const messages = {
@@ -23,6 +24,9 @@ function App() {
         <div className="app">
           <Header />
           <Routes>
+            <Route path="/login">
+             <Login/>
+            </Route>
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/" element={<Home />} />
           </Routes>
