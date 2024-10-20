@@ -1,9 +1,13 @@
 .checkoutProduct {
     display: flex;
     margin-top: 20px;
-    margin-bottom: 21px
+    margin-bottom: 21px;
+    
     
 }
+
+
+
 
 .checkoutProduct__info {
     padding-left: 20px;

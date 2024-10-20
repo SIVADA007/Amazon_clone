@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { StateContext, useStateValue } from "./StateProvider";
 
 function Header() {
-   const [{ basket, user }, dispatch] = useContext(StateContext);
+   const [{ basket, user}, dispatch] = useContext(StateContext);
 
   return (
     <div className="header">
@@ -25,8 +25,8 @@ function Header() {
 
       <div className="header__nav">
         <div className="header__option">
-          <span className="header__optionLineOne">Hello, Guest</span>
-          <span className="header__optionLineTwo">Sign In</span>
+          <span className="header__optionLineOne">Hello,{!user ? 'Guest': user.email}</span>
+          <span className="header__optionLineTwo">{user ? 'sign out' : 'sign In'}</span>
         </div>
         <div className="header__option">
           {/* Add content for other options here */}

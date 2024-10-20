@@ -7,6 +7,7 @@ import Login from "./Login";  // Import the Login component
 import { IntlProvider } from "react-intl"; 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Checkout from "./Checkout";
+import Payment from "./Payment";  // Assuming you have a Payment component
 
 // Sample messages for internationalization
 const messages = {
@@ -24,9 +25,25 @@ function App() {
         <div className="app">
           <Header />
           <Routes>
-            {/* Use the Login component */}
+            {/* Login Route */}
             <Route path="/login" element={<Login />} />
-            <Route path="/checkout" element={<Checkout />} />
+            
+            {/* Checkout Route */}
+            <Route path="/checkout" element={
+              <>
+                <Checkout />
+              </>
+            } />
+
+            {/* Payment Route */}
+            <Route path="/payment" element={
+              <>
+                <Payment />
+                
+              </>
+            } />
+
+            {/* Home Route */}
             <Route path="/" element={<Home />} />
           </Routes>
         </div>
