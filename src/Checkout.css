@@ -3,7 +3,12 @@
     padding: 20px;
     background-color: #fff;
     height: max-content;
-  
+    
+}
+
+.checkout:hover {
+    
+    
 }
 
 .checkout__ad { 
