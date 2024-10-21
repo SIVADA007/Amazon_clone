@@ -1,26 +1,26 @@
 .checkout {
     display: flex;
-    padding: 20px;
+    padding: 1.25rem;
     background-color: #fff;
     height: max-content;
-    
+      
+    @media only screen and (max-width:850px) {
+        display: block;
+    }
 }
 
-.checkout:hover {
-    
-    
-}
+
 
 .checkout__ad { 
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .checkout__title {
-    margin-right: 10px;
-    padding: 10.1px;
-    border-bottom: 1px solid lightgray;
+    margin-right: 0.625rem;
+    padding: 0.631rem;
+    border-bottom: .063rem solid lightgray;
     
-    
+       
 }
 

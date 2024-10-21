@@ -3,19 +3,19 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1500px;
+  max-width: 93.75rem;
 }
 
 .home__row {
   display: flex;
   z-index: 1;
-  margin: 5px 0;
+  margin: .313 0;
 }
 
 .home__image {
   width: 100%;
   z-index: -1;
-  margin-bottom: -150px;
+  margin-bottom: -9.375;
 
   background: linear-gradient(
     270deg,

@@ -11,10 +11,10 @@
 
 
     text-align: center;
-    padding: 10px;
+    padding: .625rem;
     font-weight: 400;
     background-color: rgb(234, 237,237);
-    border-bottom: 1px solid lightgray;
+    border-bottom: .063rem solid lightgray;
 
 }
 
@@ -25,9 +25,9 @@
 
 .payment__section {
     display: flex;
-    padding: 20px;
-    margin: 0 20px;
-    border-bottom: 1px solid lightgray;
+    padding: 1.25rem;
+    margin: 0 1.25rem;
+    border-bottom: .063rem solid lightgray;
 }
 
 .payment__title {
